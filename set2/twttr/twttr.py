@@ -1,14 +1,17 @@
-vowels = ["a", "e", "i", "o", "u"]
+vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
 
-tweet = input("Input: ").lower()
-new_tweet = []
-final_tweet = "".join(new_tweet)
+tweet = input("Input: ")
+vowels_in_tweet = []
+consonne_in_tweet = []
+
 
 for letter in tweet:
     if letter in vowels:
-        tweet.replace(letter, "")
+        vowels_in_tweet.append(letter)
     else:
-        new_tweet.append(letter)
+        consonne_in_tweet.append(letter)
 
-print(f"Output: {new_tweet}")
+final_tweet = "".join(consonne_in_tweet)
+
+print(final_tweet, end="")
 
