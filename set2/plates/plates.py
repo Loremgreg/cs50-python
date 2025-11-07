@@ -7,37 +7,34 @@ def main():
 
 
 def is_valid(s):
-    if first_letter(s) and check_length(s) and end_numbers(s) and alnum(s) == True:
-        return True
-    else:
-        return False
+    return (starts_with_two_letters(s) and has_valid_length(s) and end_numbers(s) and is_alphanumeric(s))
 
-def first_letter(s):
+def starts_with_two_letters(s):
     two_letters = s[0:2]
     if two_letters.isalpha():
         return True
     else:
         return False
 
-def check_length(s):
-    lenght = len(s)
-    if 2 <= lenght <= 6:
+def has_valid_length(s):
+    length = len(s)
+    if 2 <= length <= 6:
         return True
     else:
         return False
 
 def end_numbers(s):
-    for i in s:
-        if i.isdigit():
-            end_plate = s[i:]
-    if end_plate.isdigit() and end_plate[0] != "0":
-        return True
-    else:
-        return False
+    for index, char in enumerate(s):
+        if char.isdigit():
+            end_plate = s[index:]
+            if end_plate.isdigit() and end_plate[0] != "0":
+                    return True
+            else:
+                return False
+    return True
 
-def alnum(s):
-    is_alnum = s.isalnum()
-    if is_alnum:
+def is_alphanumeric(s):
+    if s.isalnum():
         return True
     else:
         return False
