@@ -1,4 +1,5 @@
 import emoji
+# pip install emoji
 
 
 def main():
