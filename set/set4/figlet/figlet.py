@@ -1,29 +1,35 @@
 from pyfiglet import Figlet
 import sys
-
+from random import choice
 
 figlet = Figlet()
 
-# input = input("Input: ", sys.argv[1])
+if len(sys.argv) == 1:
+    # 1. Bringing the list of the font from figlet
+    # 2. use random to choose a font
+    # 3. put the random font in variable name
+    font_list = figlet.getFonts()
 
-if len(sys.argv) == 0:
-    #random font output
-    input = input("Input: ")
+    random_font = choice(font_list)
 
-    figlet.getFonts()
-
-
-elif len(sys.argv) == 2:
-    figlet.setFont(font=sys.argv[2])
+    font = figlet.setFont(font=random_font)
     input = input("Input: ")
     print(figlet.renderText(input))
-    for arg in sys.argv[1:]:
-        if "-f" or "--font" not in sys.argv[1] or arg != setFont:
-            sys.exit("...")
 
 
+elif len(sys.argv) > 2:
+    if "-f" != sys.argv[1] and "--font" != sys.argv[1]:
+        sys.exit("Invalid usage")
 
+    font_list = figlet.getFonts()
+    if sys.argv[2] not in font_list:
+        sys.exit("Invalid usage")
 
-    
+    font = figlet.setFont(font=sys.argv[2])
+    input = input("Input: ")
+    print(figlet.renderText(input))
+
+else:
+    sys.exit("Invalid usage")
 
 
