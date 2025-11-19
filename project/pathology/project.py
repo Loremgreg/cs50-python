@@ -1,8 +1,18 @@
 import json
+from pyfiglet import Figlet
+
+figlet = Figlet()
+figlet.setFont(font="big")
+
+
 def main():
 # gère le menu, les input(), les print()
-    choice = input("1)Search by slug. 2)list_all_pathologies. ")
+    print(figlet.renderText("1. Search by slug."))
+    print("2. list_all_pathologies.")
+    choice = input("Choice: ")
     
+    # if choice < 1 and choice > 4:
+        # afficher message d'erreur et reprompter 
     if choice == "1":
         slug_choice = input("Slug: ")
         print(get_pathology_by_slug(slug_choice))
@@ -37,7 +47,7 @@ def get_pathology_by_slug(slug_choice):
         for slug in parsed_json:
             # parsed_json.values(slug)
             if slug == slug_choice:
-                return parsed_json["typical_duration_weeks"]
+                return slug["typical_duration_weeks"]
 
 # def normalize_name():
 # insensible aux majuscules/minuscules, espaces   
