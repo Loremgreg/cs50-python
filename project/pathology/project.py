@@ -10,45 +10,51 @@ def main():
     print(figlet.renderText("Welcome"))
     print("1. All pathologies.")
     print("2. Search by slug.")
-    choice = input("Choice: ")
     
-    # if choice < 1 and choice > 4:
-        # afficher message d'erreur et reprompter 
-    if choice == "1":
-        all_patho = list_all_pathologies()
-        print("List of pathologies:\n")
-        for patho in all_patho:
-            print(f" - {patho}")
+    while True:
+        try:
+            choice = int(input("Choice: "))
+            1 <= choice <= 3
+        except ValueError:
+            print("Please enter a number (1 to 3)")
+            continue
+
+        if choice == 1:
+            list_all_pathologies()
+            break
+
+        elif choice == 2:
+            slug_choice = input("Slug: ")
+            s = get_pathology_by_slug(slug_choice)
+            print(figlet.renderText(f"Name: {s['name']}"))
+            print(f"Typical duration (weeks): {s["typical_duration_weeks"]}\n")
+
+            print("Phases:")
+            for phase in s["phases"]:
+                print(f"  - {phase}")
+            print()
+
+            print("Prognosis:")
+            print(f"  - {s["prognosis"]}")
+            print()
+
+            print("Red flags:")
+            for flag in s["red_flags"]:
+                print(f"  - {flag}")
+            print()
+
+            print("Key Points:")
+            for key in s["key_points"]:
+                print(f"  - {key}")
+            print()
+            break
+        else:
+            print("Please enter a number (1 to 3)!")
+            continue
+
+        
 
     
-    elif choice == "2":
-        slug_choice = input("Slug: ")
-        s = get_pathology_by_slug(slug_choice)
-        print(figlet.renderText(f"Name: {s["name"]}"))
-        print(f"Typical duration (weeks): {s["typical_duration_weeks"]}\n")
-
-        print("Phases:")
-        for phase in s["phases"]:
-            print(f"  - {phase}")
-        print()
-
-        print("Prognosis:")
-        print(f"  - {s["prognosis"]}")
-        print()
-
-        print("Red flags:")
-        for flag in s["red_flags"]:
-            print(f"  - {flag}")
-        print()
-
-        print("Key Points:")
-        for key in s["key_points"]:
-            print(f"  - {key}")
-        print()
-
-
-    else:
-        pass
 
 # Si tape :
 # 1. liste toutes les patho
@@ -74,6 +80,11 @@ def list_all_pathologies():
         for pathology in parsed_json:
             if pathology["name"]:
                 list_of_patho.append(pathology["name"])
+        
+        print("List of pathologies:\n")
+        for patho in list_of_patho:
+            print(f" - {patho}")
+
         return list_of_patho
     
 
@@ -89,12 +100,16 @@ def get_pathology_by_slug(slug_choice):
             if pathology["slug"] == slug_choice:
                 return pathology
 
+
+
 # def normalize_name():
 # insensible aux majuscules/minuscules, espaces   
 
 # def search_pathologies_by_body_part():
 # 4. filtrer selon MS, MI, Dos, Traumatologie (fracture, elongation): search_pathologies_by_body_part: 
 
+# def exercices():
+#fonction qui genere des exercices en selectionnant des exos random dans une liste 
 
 
 if __name__ == "__main__":

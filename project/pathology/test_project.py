@@ -1,3 +1,4 @@
+import pytest
 from project import list_all_pathologies
 
 def test_list_all_pathologies():
