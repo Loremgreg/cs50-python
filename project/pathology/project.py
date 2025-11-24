@@ -24,29 +24,7 @@ def main():
             break
 
         elif choice == 2:
-            slug_choice = input("Slug: ")
-            s = get_pathology_by_slug(slug_choice)
-            print(figlet.renderText(f"Name: {s['name']}"))
-            print(f"Typical duration (weeks): {s["typical_duration_weeks"]}\n")
-
-            print("Phases:")
-            for phase in s["phases"]:
-                print(f"  - {phase}")
-            print()
-
-            print("Prognosis:")
-            print(f"  - {s["prognosis"]}")
-            print()
-
-            print("Red flags:")
-            for flag in s["red_flags"]:
-                print(f"  - {flag}")
-            print()
-
-            print("Key Points:")
-            for key in s["key_points"]:
-                print(f"  - {key}")
-            print()
+            get_pathology_by_slug()
             break
         else:
             print("Please enter a number (1 to 3)!")
@@ -91,15 +69,37 @@ def list_all_pathologies():
 # def get_pathology_by_query():
 # Recherche simple par mot clé (ou partie du nom) 
 
-def get_pathology_by_slug(slug_choice):
+def get_pathology_by_slug():
     with open("pathologies_data.json") as data_file:
         parsed_json = json.load(data_file)
+
+        slug_choice = input("Slug: ")
 
         for pathology in parsed_json:
             # parsed_json.values(slug)
             if pathology["slug"] == slug_choice:
-                return pathology
+                print(figlet.renderText(f"Name: {pathology['name']}"))
+                print(f"Typical duration (weeks): {pathology["typical_duration_weeks"]}\n")
 
+                print("Phases:")
+                for phase in pathology["phases"]:
+                    print(f"  - {phase}")
+                print()
+
+                print("Prognosis:")
+                print(f"  - {pathology["prognosis"]}")
+                print()
+
+                print("Red flags:")
+                for flag in pathology["red_flags"]:
+                    print(f"  - {flag}")
+                print()
+
+                print("Key Points:")
+                for key in pathology["key_points"]:
+                    print(f"  - {key}")
+                print()
+                return pathology
 
 
 # def normalize_name():
