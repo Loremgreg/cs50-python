@@ -97,8 +97,8 @@ def get_pathology_by_slug(slug_choice):
 
 
 
-
-main()
+if __name__ == "__main__":
+    main()
 
 
 
