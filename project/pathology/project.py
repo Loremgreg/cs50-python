@@ -8,8 +8,9 @@ figlet.setFont(font="big")
 def main():
 # gère le menu, les input(), les print()
     print(figlet.renderText("Welcome"))
-    print("1. All Pathologies.")
-    print("2. Search by Name.")
+    print("1. All Pathologies.".title())
+    print("2. Search by Name.".title())
+    print("3. Sort by Body Part.".title())
     
     while True:
         try:
@@ -31,6 +32,13 @@ def main():
             print()
             get_pathology_by_name(name_choice)
             break
+
+        elif choice == 3:
+            print()
+            print("List sorted by body part:".title())
+            get_pathology_by_body_part()
+            break
+
         else:
             print("Please enter a number (1 to 3)!")
             continue
@@ -86,6 +94,17 @@ def get_pathology_by_name(name_choice):
                     print(f"  - {key}")
                 print()
                 return pathology
+
+
+def get_pathology_by_body_part():
+    with open ("pathologies_data.json") as data_file:
+        parsed_json = json.load(data_file)
+        for pathology in sorted(parsed_json, key=lambda patho: patho["body_part"]):
+            print(f"{pathology['body_part']}: {pathology['name']}")
+    return pathology
+
+
+
 
 
 # def normalize_name():
