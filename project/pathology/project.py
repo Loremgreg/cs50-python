@@ -24,7 +24,9 @@ def main():
             break
 
         elif choice == 2:
-            get_pathology_by_name()
+            name_choice = input("Name: ")
+            print()
+            get_pathology_by_name(name_choice)
             break
         else:
             print("Please enter a number (1 to 3)!")
@@ -51,13 +53,10 @@ def list_all_pathologies():
 # def get_pathology_by_query():
 # Recherche simple par mot clé (ou partie du nom) 
 
-def get_pathology_by_name():
+def get_pathology_by_name(name_choice):
     with open("pathologies_data.json") as data_file:
         parsed_json = json.load(data_file)
-
-        name_choice = input("Name: ")
-        print()
-
+        
         for pathology in parsed_json:
             # parsed_json.values(slug)
             if pathology["name"] == name_choice:
