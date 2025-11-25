@@ -41,7 +41,7 @@
     },
     {
         "slug": "neck-pain",
-        "name": "Neck Pain (Acute / Chronic / WAD)",
+        "name": "Neck Pain",
         "typical_duration_weeks": 12,
         "phases": [
             "Rapid improvement (6–12 weeks)",

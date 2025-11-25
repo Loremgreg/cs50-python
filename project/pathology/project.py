@@ -21,6 +21,9 @@ def main():
 
         if choice == 1:
             list_all_pathologies()
+            name_choice = input("Select a pathology: ")
+            print()
+            get_pathology_by_name(name_choice)
             break
 
         elif choice == 2:
@@ -54,13 +57,14 @@ def list_all_pathologies():
 # Recherche simple par mot clé (ou partie du nom) 
 
 def get_pathology_by_name(name_choice):
+    name_choice = name_choice.lower()
     with open("pathologies_data.json") as data_file:
         parsed_json = json.load(data_file)
         
         for pathology in parsed_json:
             # parsed_json.values(slug)
-            if pathology["name"] == name_choice:
-                print(f"{pathology['name']}: \n")
+            if pathology["name"].lower() == name_choice:
+                print(f"{pathology["name"]}: \n")
                 print(f"Typical duration (weeks): {pathology["typical_duration_weeks"]}\n")
 
                 print("Phases:")
