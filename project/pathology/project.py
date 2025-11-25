@@ -8,8 +8,8 @@ figlet.setFont(font="big")
 def main():
 # gère le menu, les input(), les print()
     print(figlet.renderText("Welcome"))
-    print("1. All pathologies.")
-    print("2. Search by slug.")
+    print("1. All Pathologies.")
+    print("2. Search by Name.")
     
     while True:
         try:
@@ -24,30 +24,12 @@ def main():
             break
 
         elif choice == 2:
-            get_pathology_by_slug()
+            get_pathology_by_name()
             break
         else:
             print("Please enter a number (1 to 3)!")
             continue
 
-        
-
-    
-
-# Si tape :
-# 1. liste toutes les patho
-# 2. filtrer selon partie du corps: search_pathologies_by_body_part: 
-# 3. Recherche par nom (par slug) : get_pathology_by_slug()
-# 4. Recherche par mot clé:  search_pathologies_by_query()
-# 5. quitter 
-
-# print 
-# le menu interractif 
-# → plusieurs actions
-# → saisie utilisateur
-# → affichage formaté
-# → moteur de recherche simple
- 
 
 def list_all_pathologies():
         # ensuite selectionnée une patho et afficher result 
@@ -69,16 +51,17 @@ def list_all_pathologies():
 # def get_pathology_by_query():
 # Recherche simple par mot clé (ou partie du nom) 
 
-def get_pathology_by_slug():
+def get_pathology_by_name():
     with open("pathologies_data.json") as data_file:
         parsed_json = json.load(data_file)
 
-        slug_choice = input("Slug: ")
+        name_choice = input("Name: ")
+        print()
 
         for pathology in parsed_json:
             # parsed_json.values(slug)
-            if pathology["slug"] == slug_choice:
-                print(figlet.renderText(f"Name: {pathology['name']}"))
+            if pathology["name"] == name_choice:
+                print(f"{pathology['name']}: \n")
                 print(f"Typical duration (weeks): {pathology["typical_duration_weeks"]}\n")
 
                 print("Phases:")
@@ -116,4 +99,17 @@ if __name__ == "__main__":
     main()
 
 
+# Si tape :
+# 1. liste toutes les patho
+# 2. filtrer selon partie du corps: search_pathologies_by_body_part: 
+# 3. Recherche par nom (par slug) : get_pathology_by_slug()
+# 4. Recherche par mot clé:  search_pathologies_by_query()
+# 5. quitter 
 
+# print 
+# le menu interractif 
+# → plusieurs actions
+# → saisie utilisateur
+# → affichage formaté
+# → moteur de recherche simple
+ 
