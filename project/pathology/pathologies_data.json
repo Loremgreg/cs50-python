@@ -2,6 +2,7 @@
     {
         "slug": "frozen-shoulder",
         "name": "Frozen Shoulder (Adhesive Capsulitis)",
+        "body_part": "Upper limb",
         "typical_duration_weeks": 120,
         "phases": [
             "Painful phase (Freezing)",
@@ -22,6 +23,7 @@
     {
         "slug": "low-back-pain",
         "name": "Low Back Pain (Non-specific)",
+        "body_part": "Back",
         "typical_duration_weeks": 24,
         "phases": [
             "Rapid early improvement (0–6 weeks)",
@@ -42,6 +44,7 @@
     {
         "slug": "neck-pain",
         "name": "Neck Pain",
+        "body_part": "Back",
         "typical_duration_weeks": 12,
         "phases": [
             "Rapid improvement (6–12 weeks)",
@@ -62,6 +65,7 @@
     {
         "slug": "adductor-groin-strain",
         "name": "Adductor / Groin Strain",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 4,
         "phases": [
             "Acute pain",
@@ -81,6 +85,7 @@
     {
         "slug": "bone-stress-injury",
         "name": "Bone Stress Injury",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 12,
         "phases": [
             "Stress reaction",
@@ -99,6 +104,7 @@
     {
         "slug": "calf-strain-cmsi",
         "name": "Calf Muscle Strain Injury",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 4,
         "phases": [
             "Acute pain",
@@ -118,6 +124,7 @@
     {
         "slug": "concussion",
         "name": "Sport-related Concussion",
+        "body_part": "Back",
         "typical_duration_weeks": 3,
         "phases": [
             "Acute symptoms",
@@ -137,6 +144,7 @@
     {
         "slug": "tennis-elbow",
         "name": "Lateral / Medial Epicondylitis",
+        "body_part": "Upper limb",
         "typical_duration_weeks": 52,
         "phases": [
             "Gradual onset pain",
@@ -156,6 +164,7 @@
     {
         "slug": "ankle-sprain-advanced",
         "name": "Lateral Ankle Sprain",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 6,
         "phases": [
             "Rapid improvement",
@@ -175,6 +184,7 @@
     {
         "slug": "plantar-heel-pain",
         "name": "Plantar Fasciitis / Plantar Heel Pain",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 52,
         "phases": [
             "Chronic onset",
@@ -194,6 +204,7 @@
     {
         "slug": "hamstring-strain",
         "name": "Hamstring Muscle Strain",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 4,
         "phases": [
             "Acute tear",
@@ -213,6 +224,7 @@
     {
         "slug": "fai",
         "name": "Femoroacetabular Impingement",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 52,
         "phases": [
             "Activity pain",
@@ -232,6 +244,7 @@
     {
         "slug": "hip-arthroplasty",
         "name": "Total Hip Arthroplasty",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 24,
         "phases": [
             "Early recovery",
@@ -251,6 +264,7 @@
     {
         "slug": "acl-reconstruction",
         "name": "ACL Reconstruction",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 52,
         "phases": [
             "Post-op rehab",
@@ -270,6 +284,7 @@
     {
         "slug": "meniscus-tear",
         "name": "Meniscus Tear (Degenerative)",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 52,
         "phases": [
             "Pain onset",
@@ -289,6 +304,7 @@
     {
         "slug": "patellofemoral-pain",
         "name": "Patellofemoral Pain",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 52,
         "phases": [
             "Onset",
@@ -308,6 +324,7 @@
     {
         "slug": "knee-arthroplasty",
         "name": "Knee Arthroplasty (TKA / UKA)",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 24,
         "phases": [
             "Early recovery (0–12 weeks)",
@@ -328,6 +345,7 @@
     {
         "slug": "osgood-schlatter",
         "name": "Osgood–Schlatter Disease",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 78,
         "phases": [
             "Activity pain",
@@ -347,6 +365,7 @@
     {
         "slug": "severs-disease",
         "name": "Sever’s Disease (Calcaneal Apophysitis)",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 52,
         "phases": [
             "Activity-related heel pain",
@@ -367,6 +386,7 @@
     {
         "slug": "saps-rcrsp",
         "name": "Subacromial Pain Syndrome / RCRSP",
+        "body_part": "Upper limb",
         "typical_duration_weeks": 24,
         "phases": [
             "Painful phase",
@@ -386,6 +406,7 @@
     {
         "slug": "spondy",
         "name": "Spondylolysis / Spondylolisthesis",
+        "body_part": "Back",
         "typical_duration_weeks": 12,
         "phases": [
             "Acute pain",
@@ -405,6 +426,7 @@
     {
         "slug": "tendinopathy",
         "name": "Achilles / Patellar Tendinopathy",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 24,
         "phases": [
             "Reactive phase",
@@ -424,6 +446,7 @@
     {
         "slug": "carpal-tunnel",
         "name": "Carpal Tunnel Syndrome",
+        "body_part": "Upper limb",
         "typical_duration_weeks": 52,
         "phases": [
             "Intermittent paresthesia",
@@ -443,6 +466,7 @@
     {
         "slug": "neuropraxia",
         "name": "Neuropraxia / Stinger",
+        "body_part": "Upper limb",
         "typical_duration_weeks": 8,
         "phases": [
             "Neurological shutdown",
@@ -463,6 +487,7 @@
     {
         "slug": "lumbar-spinal-stenosis",
         "name": "Lumbar Spinal Stenosis",
+        "body_part": "Back",
         "typical_duration_weeks": 156,
         "phases": [
             "Claudication onset",
@@ -482,6 +507,7 @@
     {
         "slug": "pcl-injury",
         "name": "Posterior Cruciate Ligament Injury",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 16,
         "phases": [
             "Acute protection",
@@ -501,6 +527,7 @@
     {
         "slug": "mtss",
         "name": "Medial Tibial Stress Syndrome",
+        "body_part": "Lower limb",
         "typical_duration_weeks": 36,
         "phases": [
             "Exercise-induced pain",
@@ -520,6 +547,7 @@
     {
         "slug": "cervical-myelopathy",
         "name": "Degenerative Cervical Myelopathy",
+        "body_part": "Back",
         "typical_duration_weeks": 260,
         "phases": [
             "Mild neuro deficits",
@@ -540,6 +568,7 @@
     {
         "slug": "cervical-radiculopathy",
         "name": "Cervical Radiculopathy",
+        "body_part": "Back",
         "typical_duration_weeks": 104,
         "phases": [
             "Acute pain",

@@ -64,8 +64,8 @@ def get_pathology_by_name(name_choice):
         for pathology in parsed_json:
             # parsed_json.values(slug)
             if pathology["name"].lower() == name_choice:
-                print(f"{pathology["name"]}: \n")
-                print(f"Typical duration (weeks): {pathology["typical_duration_weeks"]}\n")
+                print(f"{pathology['name']}: \n")
+                print(f"Typical duration (weeks): {pathology['typical_duration_weeks']}\n")
 
                 print("Phases:")
                 for phase in pathology["phases"]:
