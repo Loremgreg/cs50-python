@@ -1,0 +1,588 @@
+[
+    {
+        "slug": "frozen-shoulder",
+        "name": "Frozen Shoulder (Adhesive Capsulitis)",
+        "body_part": "Upper limb",
+        "typical_duration_weeks": 120,
+        "phases": [
+            "Painful phase (Freezing)",
+            "Stiffness phase (Frozen)",
+            "Recovery phase (Thawing)"
+        ],
+        "prognosis": "Recovery is slow (12–36 months). 40–56% may retain some symptoms long-term.",
+        "red_flags": [
+            "Severe non-mechanical pain",
+            "Neurological symptoms"
+        ],
+        "key_points": [
+            "Continuum, not always 3 phases",
+            "Long average duration",
+            "No clearly superior treatment"
+        ]
+    },
+    {
+        "slug": "low-back-pain",
+        "name": "Low Back Pain (Non-specific)",
+        "body_part": "Back",
+        "typical_duration_weeks": 24,
+        "phases": [
+            "Rapid early improvement (0–6 weeks)",
+            "Slower improvement (6 weeks–6 months)",
+            "Possible recurrent/persistent symptoms"
+        ],
+        "prognosis": "Most improve in 6–12 months, but recurrence common (25–33%/year).",
+        "red_flags": [
+            "Neurological deficit",
+            "Cauda equina symptoms"
+        ],
+        "key_points": [
+            "Early improvement typical",
+            "Many still symptomatic at 12 months",
+            "Recurrence common"
+        ]
+    },
+    {
+        "slug": "neck-pain",
+        "name": "Neck Pain",
+        "body_part": "Back",
+        "typical_duration_weeks": 12,
+        "phases": [
+            "Rapid improvement (6–12 weeks)",
+            "Slower gains (3–12 months)",
+            "Recurrent/persistent course"
+        ],
+        "prognosis": "50–80% have symptoms at 6–12 months; chronic cases often recurrent.",
+        "red_flags": [
+            "Myelopathy signs",
+            "Neurological deficit"
+        ],
+        "key_points": [
+            "High recurrence",
+            "Most recovery in 6–12 weeks",
+            "Symptom severity predicts prognosis"
+        ]
+    },
+    {
+        "slug": "adductor-groin-strain",
+        "name": "Adductor / Groin Strain",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 4,
+        "phases": [
+            "Acute pain",
+            "Rehab and loading",
+            "Return to sport"
+        ],
+        "prognosis": "Grade 0–2: 2–4 weeks; Grade 3: 8–12 weeks.",
+        "red_flags": [
+            "Avulsion fracture",
+            "Hernia symptoms"
+        ],
+        "key_points": [
+            "Running mechanism = longer recovery",
+            "Proximal AL injuries take longest"
+        ]
+    },
+    {
+        "slug": "bone-stress-injury",
+        "name": "Bone Stress Injury",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 12,
+        "phases": [
+            "Stress reaction",
+            "Healing / offloading",
+            "Return to impact"
+        ],
+        "prognosis": "Low-risk heal ~8 weeks; high-risk 12–24 weeks.",
+        "red_flags": [
+            "High-risk sites (navicular, femoral neck)"
+        ],
+        "key_points": [
+            "Return only when pain-free WB",
+            "Healing varies by location"
+        ]
+    },
+    {
+        "slug": "calf-strain-cmsi",
+        "name": "Calf Muscle Strain Injury",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 4,
+        "phases": [
+            "Acute pain",
+            "Progressive loading",
+            "Return to play"
+        ],
+        "prognosis": "Gastrocnemius ≈19 days; soleus ≈25 days; AD increases recovery time.",
+        "red_flags": [
+            "Achilles rupture",
+            "DVT concern"
+        ],
+        "key_points": [
+            "Running-related injuries take longer",
+            "Older age increases recurrence"
+        ]
+    },
+    {
+        "slug": "concussion",
+        "name": "Sport-related Concussion",
+        "body_part": "Back",
+        "typical_duration_weeks": 3,
+        "phases": [
+            "Acute symptoms",
+            "Subacute recovery",
+            "Possible persistent symptoms"
+        ],
+        "prognosis": "Most recover in 7–14 days; minority have symptoms for weeks–months.",
+        "red_flags": [
+            "Worsening neuro symptoms",
+            "LOC, seizure"
+        ],
+        "key_points": [
+            "High early symptom severity = slower recovery",
+            "Recovery not always linear"
+        ]
+    },
+    {
+        "slug": "tennis-elbow",
+        "name": "Lateral / Medial Epicondylitis",
+        "body_part": "Upper limb",
+        "typical_duration_weeks": 52,
+        "phases": [
+            "Gradual onset pain",
+            "Persistent symptoms",
+            "Spontaneous resolution"
+        ],
+        "prognosis": "≈90% recover by 1 year; 12–18 month natural course.",
+        "red_flags": [
+            "Swelling/heat (infection)",
+            "Neurological deficits"
+        ],
+        "key_points": [
+            "Self-limiting",
+            "Conservative care usually sufficient"
+        ]
+    },
+    {
+        "slug": "ankle-sprain-advanced",
+        "name": "Lateral Ankle Sprain",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 6,
+        "phases": [
+            "Rapid improvement",
+            "Rehab",
+            "Possible chronic instability"
+        ],
+        "prognosis": "Rapid early recovery, but up to 55% have long-term symptoms.",
+        "red_flags": [
+            "Inability to WB",
+            "Syndesmotic sprain"
+        ],
+        "key_points": [
+            "Injury grade not predictive",
+            "Early functional deficits predict CAI"
+        ]
+    },
+    {
+        "slug": "plantar-heel-pain",
+        "name": "Plantar Fasciitis / Plantar Heel Pain",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 52,
+        "phases": [
+            "Chronic onset",
+            "Persistent pain",
+            "Gradual improvement"
+        ],
+        "prognosis": "Symptoms often last >12 months; up to 50% have mild symptoms years later.",
+        "red_flags": [
+            "Night pain",
+            "Tarsal tunnel signs"
+        ],
+        "key_points": [
+            "Often chronic",
+            "Long-term symptoms often mild"
+        ]
+    },
+    {
+        "slug": "hamstring-strain",
+        "name": "Hamstring Muscle Strain",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 4,
+        "phases": [
+            "Acute tear",
+            "Rehab",
+            "Return to sport"
+        ],
+        "prognosis": "Sprinting: ~23 days; Stretching-type: ~43 days.",
+        "red_flags": [
+            "Avulsion",
+            "Severe proximal pain"
+        ],
+        "key_points": [
+            "MRI poor predictor",
+            "Large individual variation"
+        ]
+    },
+    {
+        "slug": "fai",
+        "name": "Femoroacetabular Impingement",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 52,
+        "phases": [
+            "Activity pain",
+            "Rehab",
+            "Variable long-term course"
+        ],
+        "prognosis": "Cam linked to OA; surgery does not change natural history.",
+        "red_flags": [
+            "Severe night pain",
+            "Mechanical locking"
+        ],
+        "key_points": [
+            "No evidence surgery prevents OA",
+            "Symptoms often improve with rehab"
+        ]
+    },
+    {
+        "slug": "hip-arthroplasty",
+        "name": "Total Hip Arthroplasty",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 24,
+        "phases": [
+            "Early recovery",
+            "Strengthening",
+            "Return to work/sport"
+        ],
+        "prognosis": "75% last 15–20 years; >50% last 25 years.",
+        "red_flags": [
+            "Infection",
+            "Dislocation"
+        ],
+        "key_points": [
+            "High RTW/RTS rates",
+            "Implant survival excellent"
+        ]
+    },
+    {
+        "slug": "acl-reconstruction",
+        "name": "ACL Reconstruction",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 52,
+        "phases": [
+            "Post-op rehab",
+            "Strength/neuromuscular",
+            "RTS"
+        ],
+        "prognosis": "80% return to sport; >20% second ACL injury risk.",
+        "red_flags": [
+            "Infection",
+            "Graft failure"
+        ],
+        "key_points": [
+            "RTS should not occur <9–12 months",
+            "High risk of OA long-term"
+        ]
+    },
+    {
+        "slug": "meniscus-tear",
+        "name": "Meniscus Tear (Degenerative)",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 52,
+        "phases": [
+            "Pain onset",
+            "Rehab/surgery",
+            "Long-term stability"
+        ],
+        "prognosis": "APM no better than placebo; most improve 12–24 months.",
+        "red_flags": [
+            "True locking",
+            "Large displaced tear"
+        ],
+        "key_points": [
+            "Most degenerative tears remain stable",
+            "Conservative care often equal or better"
+        ]
+    },
+    {
+        "slug": "patellofemoral-pain",
+        "name": "Patellofemoral Pain",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 52,
+        "phases": [
+            "Onset",
+            "Initial rehab",
+            "Plateau"
+        ],
+        "prognosis": "Often not self-limiting; up to 91% symptomatic decades later.",
+        "red_flags": [
+            "Swelling/locking",
+            "Trauma"
+        ],
+        "key_points": [
+            "Most improvement first 3 months",
+            "High long-term persistence rate"
+        ]
+    },
+    {
+        "slug": "knee-arthroplasty",
+        "name": "Knee Arthroplasty (TKA / UKA)",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 24,
+        "phases": [
+            "Early recovery (0–12 weeks)",
+            "Strengthening and function (3–6 months)",
+            "Return to low/moderate-impact sport"
+        ],
+        "prognosis": "UKA return to sport ~3 months; TKA ~6 months. 82% of TKRs and 70% of UKRs last 25 years.",
+        "red_flags": [
+            "Infection",
+            "DVT signs",
+            "Dislocation"
+        ],
+        "key_points": [
+            "High return-to-sport rates",
+            "Implant survival excellent long-term"
+        ]
+    },
+    {
+        "slug": "osgood-schlatter",
+        "name": "Osgood–Schlatter Disease",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 78,
+        "phases": [
+            "Activity pain",
+            "Recurrent flares",
+            "Resolution with skeletal maturity"
+        ],
+        "prognosis": "Often lasts 12–18 months; up to 60% have symptoms years later.",
+        "red_flags": [
+            "Avulsion fracture signs",
+            "Large swelling"
+        ],
+        "key_points": [
+            "Often persistent longer than commonly assumed",
+            "Pain with kneeling may remain"
+        ]
+    },
+    {
+        "slug": "severs-disease",
+        "name": "Sever’s Disease (Calcaneal Apophysitis)",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 52,
+        "phases": [
+            "Activity-related heel pain",
+            "Recurrent flares",
+            "Resolution at maturity"
+        ],
+        "prognosis": "Self-limiting; resolves when apophysis closes.",
+        "red_flags": [
+            "Night pain",
+            "Severe swelling",
+            "Inability to bear weight"
+        ],
+        "key_points": [
+            "Common in active children",
+            "Recurrence normal until maturity"
+        ]
+    },
+    {
+        "slug": "saps-rcrsp",
+        "name": "Subacromial Pain Syndrome / RCRSP",
+        "body_part": "Upper limb",
+        "typical_duration_weeks": 24,
+        "phases": [
+            "Painful phase",
+            "Rehab",
+            "Possible plateau"
+        ],
+        "prognosis": "50% recover in 6 months; 32% symptomatic at 1 year regardless of treatment.",
+        "red_flags": [
+            "Acute traumatic rupture",
+            "Neurological symptoms"
+        ],
+        "key_points": [
+            "Surgery offers no meaningful benefit",
+            "Recovery typically 23–24 weeks"
+        ]
+    },
+    {
+        "slug": "spondy",
+        "name": "Spondylolysis / Spondylolisthesis",
+        "body_part": "Back",
+        "typical_duration_weeks": 12,
+        "phases": [
+            "Acute pain",
+            "Rehab",
+            "Long-term stable or benign course"
+        ],
+        "prognosis": "Slip progression slows with age; most individuals lead normal active lives.",
+        "red_flags": [
+            "Neurological deficits",
+            "High-grade slip"
+        ],
+        "key_points": [
+            "Pain does not correlate with slip progression",
+            "Athletes return 3–6 months"
+        ]
+    },
+    {
+        "slug": "tendinopathy",
+        "name": "Achilles / Patellar Tendinopathy",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 24,
+        "phases": [
+            "Reactive phase",
+            "Loading rehab",
+            "Possible plateau"
+        ],
+        "prognosis": "Improvement 3–12 months; 23–37% have persistent symptoms at 10 years.",
+        "red_flags": [
+            "Suspected rupture",
+            "Night pain"
+        ],
+        "key_points": [
+            "Tendons adapt slowly",
+            "Wait-and-see ineffective"
+        ]
+    },
+    {
+        "slug": "carpal-tunnel",
+        "name": "Carpal Tunnel Syndrome",
+        "body_part": "Upper limb",
+        "typical_duration_weeks": 52,
+        "phases": [
+            "Intermittent paresthesia",
+            "Progressive symptoms",
+            "Possible stabilization"
+        ],
+        "prognosis": "48% improve spontaneously over 2 years; many progress to surgery within 1–3 years.",
+        "red_flags": [
+            "Thenar atrophy",
+            "Progressive weakness"
+        ],
+        "key_points": [
+            "Highly variable natural course",
+            "Nocturnal symptoms predictive of severity"
+        ]
+    },
+    {
+        "slug": "neuropraxia",
+        "name": "Neuropraxia / Stinger",
+        "body_part": "Upper limb",
+        "typical_duration_weeks": 8,
+        "phases": [
+            "Neurological shutdown",
+            "Remyelination",
+            "Recovery"
+        ],
+        "prognosis": "Most recover in 2–12 weeks; 85% of athletes miss no games.",
+        "red_flags": [
+            "Bilateral symptoms",
+            "Symptoms >48h",
+            "Neck injury"
+        ],
+        "key_points": [
+            "Excellent prognosis",
+            "Weakness may take days to recover"
+        ]
+    },
+    {
+        "slug": "lumbar-spinal-stenosis",
+        "name": "Lumbar Spinal Stenosis",
+        "body_part": "Back",
+        "typical_duration_weeks": 156,
+        "phases": [
+            "Claudication onset",
+            "Stability or slow change",
+            "Possible progression"
+        ],
+        "prognosis": "1/3 improve, 50% stable, 10–20% worsen over 3 years.",
+        "red_flags": [
+            "Cauda equina symptoms",
+            "Rapid neuro decline"
+        ],
+        "key_points": [
+            "Often stable long-term",
+            "Progression unpredictable"
+        ]
+    },
+    {
+        "slug": "pcl-injury",
+        "name": "Posterior Cruciate Ligament Injury",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 16,
+        "phases": [
+            "Acute protection",
+            "Rehab",
+            "Return to sport"
+        ],
+        "prognosis": "RTS 16 weeks; 91% return to same/higher level at 2 years.",
+        "red_flags": [
+            "Posterolateral corner injury",
+            "Gross instability"
+        ],
+        "key_points": [
+            "Nonoperative management effective",
+            "High RTS success"
+        ]
+    },
+    {
+        "slug": "mtss",
+        "name": "Medial Tibial Stress Syndrome",
+        "body_part": "Lower limb",
+        "typical_duration_weeks": 36,
+        "phases": [
+            "Exercise-induced pain",
+            "Load modification",
+            "Return to running"
+        ],
+        "prognosis": "Often prolonged; many require 9–12 months to resume preferred activity.",
+        "red_flags": [
+            "Localized tenderness (stress fracture)",
+            "Night pain"
+        ],
+        "key_points": [
+            "Slow recovery common",
+            "Requires careful load management"
+        ]
+    },
+    {
+        "slug": "cervical-myelopathy",
+        "name": "Degenerative Cervical Myelopathy",
+        "body_part": "Back",
+        "typical_duration_weeks": 260,
+        "phases": [
+            "Mild neuro deficits",
+            "Variable course",
+            "Possible progressive decline"
+        ],
+        "prognosis": "20–62% deteriorate over 3–6 years; ADLs worsen in many nonoperative cases.",
+        "red_flags": [
+            "Gait disturbance",
+            "Hyperreflexia",
+            "Bowel/bladder issues"
+        ],
+        "key_points": [
+            "Unpredictable course",
+            "Early recognition crucial"
+        ]
+    },
+    {
+        "slug": "cervical-radiculopathy",
+        "name": "Cervical Radiculopathy",
+        "body_part": "Back",
+        "typical_duration_weeks": 104,
+        "phases": [
+            "Acute pain",
+            "Improvement 4–6 months",
+            "Full recovery ~24–36 months"
+        ],
+        "prognosis": "83% fully recover by 24–36 months.",
+        "red_flags": [
+            "Progressive weakness",
+            "Myelopathic signs"
+        ],
+        "key_points": [
+            "Most improve substantially by 6 months",
+            "Workers' compensation = poorer outcomes"
+        ]
+    }
+]
