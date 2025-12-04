@@ -67,5 +67,4 @@ Architecture proposée
           # menu loop inspiré de main()
 
   Cette structuration te permet de garder le même comportement tout en séparant clairement la logique métier
-  (objets Pathology), l’accès aux données (repository) et l’interface utilisateur (CLI). Ensuite, tu peux
-  tester chaque composant indépendamment et faire évoluer la version orientée objet sur ta branche dédiée.
+  (objets Pathology), l’accès aux données (repository) et l’interface utilisateur (CLI).
