@@ -323,7 +323,7 @@
     },
     {
         "slug": "knee-arthroplasty",
-        "name": "Knee Arthroplasty (TKA / UKA)",
+        "name": "Knee Arthroplasty",
         "body_part": "Lower limb",
         "typical_duration_weeks": 24,
         "phases": [
