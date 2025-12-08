@@ -84,8 +84,10 @@ class PathologyDatabase:
     
 class PathologyMenu:
     
-    def __init__(self, database):
-        self.database = database  # On stocke la référence à PathologyDatabase
+    def __init__(self, pathology_database, exercice_database):
+        self.database = pathology_database  # On stocke la référence à PathologyDatabase
+        self.exercice_database = exercice_database
+        
         self.figlet = Figlet()
         self.figlet.setFont(font="big")
 
@@ -95,15 +97,16 @@ class PathologyMenu:
             print("1. All Pathologies.".title())
             print("2. Search by Name.".title())
             print("3. Sort by Body Part.".title())
+            print("4. Show Exercice Programs.".title())
             
             while True:
                 try:
                     choice = int(input("Choice: "))
-                    if not (1 <= choice <= 3):
-                        print("Please enter a number (1 to 3)!")
+                    if not (1 <= choice <= 4):
+                        print("Please enter a number (1 to 4)!")
                         continue
                 except ValueError:
-                    print("Please enter a number (1 to 3)")
+                    print("Please enter a number (1 to 4)")
                     continue
 
                 if choice == 1:
@@ -114,6 +117,9 @@ class PathologyMenu:
                     break
                 elif choice == 3:
                     self.handle_sort_by_body_part()
+                    break
+                elif choice == 4:
+                    self.handle_show_exercise_programs()
                     break
 
     def handle_list_all(self):
@@ -153,13 +159,171 @@ class PathologyMenu:
         for pathology in sorted_pathologies:
             print(f"{pathology.body_part}: {pathology.name}")
 
+    def handle_show_exercise_programs(self):
+            """Option 4: Affiche les programmes d'exercices et permet d'en choisir un"""
+            print()
+            print("Available exercise programs:\n")
+
+            # Liste tous les protocoles avec leur slug et leur nom
+            protocols = self.exercice_database.get_all_protocols()
+            if not protocols:
+                print("No exercise programs found.")
+                return
+            
+            for protocol in protocols:
+                print(f" - {protocol['slug']}: {protocol['name']}")
+
+            slug_choice = input("\nEnter the slug of the program you want to view: ").strip()
+            print()
+
+            protocol = self.exercice_database.get_protocol_by_slug(slug_choice)
+            if not protocol:
+                print("Exercise program not found.")
+                return
+
+            # Affichage des informations du protocole
+            print(self.figlet.renderText(protocol["name"]))
+            print(f"Body part: {protocol['body_part']}")
+            print(f"Goal: {protocol['goal']}\n")
+            print(f"Duration / Frequency: {protocol['duration_frequency']}\n")
+            print("General tips:")
+            print(f"  - {protocol['general_tips']}\n")
+
+            print("Key points:")
+            for kp in protocol["key_points"]:
+                print(f"  - {kp}")
+            print()
+
+            print("Exercises:\n")
+            for ex in protocol["exercises"]:
+                # Chaque ex est un objet Exercise, on utilise son __str__()
+                print(ex)
+                print("-" * 40)
+        
+
+class Exercise:
+    def __init__(self, slug, name, video_url, sets, repetitions, description, 
+                 tips, progression, duration=None, rest=None, equipment=None):
+        self.slug = slug
+        self.name = name
+        self.video_url = video_url
+        self.sets = sets
+        self.repetitions = repetitions
+        self.duration = duration
+        self.rest = rest
+        self.equipment = equipment
+        self.description = description
+        self.tips = tips
+        self.progression = progression
+    
+    def __str__(self):
+        """Affichage formaté pour le terminal"""
+        result = f"## {self.name}\n"
+        result += f"Video: {self.video_url}\n\n"
+        result += f"Sets: {self.sets}\n"
+        result += f"Repetitions: {self.repetitions}\n"
+        
+        if self.duration:
+            result += f"Duration: {self.duration}\n"
+        if self.rest:
+            result += f"Rest: {self.rest}\n"
+        if self.equipment:
+            result += f"Equipment: {self.equipment}\n"
+        
+        result += f"\nDescription: {self.description}\n"
+        result += f"\nTips: {self.tips}\n"
+        result += f"\nProgression: {self.progression}\n"
+        
+        return result
+    
+    def __repr__(self):
+        return f"Exercise(name='{self.name}', slug='{self.slug}')"
+
+
+class ExerciseDatabase:
+    def __init__(self):
+        self.protocols = []  # Liste de dictionnaires {protocol_info, exercises}
+    
+    def load_from_json(self, file_path):
+        """Charge les protocoles d'exercices depuis le JSON"""
+        with open(file_path) as f:
+            data = json.load(f)
+        
+        for protocol_data in data:
+            # Créer les objets Exercise pour ce protocole
+            exercises = []
+            for ex_item in protocol_data["exercises"]:
+                exercise = Exercise(
+                    slug=ex_item["slug"],
+                    name=ex_item["name"],
+                    video_url=ex_item["video_url"],
+                    sets=ex_item["sets"],
+                    repetitions=ex_item["repetitions"],
+                    description=ex_item["description"],
+                    tips=ex_item["tips"],
+                    progression=ex_item["progression"],
+                    duration=ex_item.get("duration"),
+                    rest=ex_item.get("rest"),
+                    equipment=ex_item.get("equipment")
+                )
+                exercises.append(exercise)
+            
+            # Stocker le protocole avec ses métadonnées
+            protocol = {
+                "slug": protocol_data["slug"],
+                "pathology_slug": protocol_data["pathology_slug"],
+                "name": protocol_data["name"],
+                "body_part": protocol_data["body_part"],
+                "goal": protocol_data["goal"],
+                "duration_frequency": protocol_data["duration_frequency"],
+                "general_tips": protocol_data["general_tips"],
+                "key_points": protocol_data["key_points"],
+                "exercises": exercises
+            }
+            self.protocols.append(protocol)
+    
+    def get_protocols_for_pathology(self, pathology_slug):
+        """Retourne tous les protocoles liés à une pathologie"""
+        slug_lower = pathology_slug.lower()
+        return [
+            p for p in self.protocols
+            if p["pathology_slug"].lower() == slug_lower
+        ]
+    
+    def get_protocol_by_slug(self, slug):
+        """Retourne un protocole complet par son slug"""
+        slug_lower = slug.lower()
+        for protocol in self.protocols:
+            if protocol["slug"].lower() == slug_lower:
+                return protocol
+        return None
+    
+    def get_protocol_by_body_part(self, body_part):
+        """Retourne tous les protocoles pour une partie du corps"""
+        body_part_lower = body_part.lower()
+        return [p for p in self.protocols 
+                if body_part_lower in p["body_part"].lower()]
+    
+    def get_all_protocols(self):
+        """Retourne tous les protocoles"""
+        return self.protocols
+    
+    def list_protocol_names(self):
+        """Retourne la liste des noms de protocoles"""
+        return [p["name"] for p in self.protocols]
+
+
 def main():
     # 1. Créer la base de données
-    database = PathologyDatabase()
-    database.load_from_json("pathologies_data.json")
+    pathology_db = PathologyDatabase()
+    pathology_db.load_from_json("pathologies_data.json")
     
-    # 2. Créer le menu EN LUI PASSANT la database
-    menu = PathologyMenu(database)
+    # Charger les exercices
+    exercice_db = ExerciseDatabase()
+    exercice_db.load_from_json("exercises_data.json")
+
+    # 2. Créer le menu EN LUI PASSANT les database
+    menu = PathologyMenu(pathology_db, exercice_db)
     
     # 3. Lancer le menu
     menu.run()

@@ -1,6 +1,7 @@
 [
     {
         "slug": "knee-arthroplasty-rehab",
+        "pathology_slug": "knee-arthroplasty",
         "name": "Knee Arthroplasty Rehabilitation – Early Strength and Mobility Recovery",
         "body_part": "Lower limb",
         "goal": "Restore knee joint mobility, improve quadriceps and hip muscle strength, and enhance lower limb function following knee arthroplasty.",
@@ -79,7 +80,7 @@
                 "name": "Seated Hamstring Stretch",
                 "video_url": "https://www.youtube.com/watch?v=u55F2jOzBVI",
                 "sets": 2,
-                "duration": "Hold each stretch for 20 seconds per leg",
+                "repetitions": "Hold each stretch for 20 seconds per leg",
                 "rest": "10–20 seconds between legs",
                 "description": "Sit on the edge of a chair with one leg extended straight in front of you, heel on the floor. Keep your back straight and gently lean forward from your hips until you feel a stretch at the back of your thigh. Hold the position without bouncing.",
                 "tips": "Keep your toes pointed up and avoid rounding your lower back. Stretch both legs evenly to maintain balance.",
