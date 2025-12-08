@@ -1,5 +1,7 @@
 import json
 from pyfiglet import Figlet
+from fpdf import FPDF
+
 
 figlet = Figlet()
 figlet.setFont(font="big")

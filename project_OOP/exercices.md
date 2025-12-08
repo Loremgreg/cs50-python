@@ -1,4 +1,6 @@
-# Knee Arthroplasty Rehabilitation – Early Strength and Mobility Recovery
+# Knee Arthroplasty Rehabilitation – 
+
+Phase: Early Strength and Mobility Recovery
 
 Goal: Restore knee joint mobility, improve quadriceps and hip muscle strength, and enhance lower limb function following knee arthroplasty.
 

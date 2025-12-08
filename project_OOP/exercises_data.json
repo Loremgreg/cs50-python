@@ -1,0 +1,112 @@
+[
+    {
+        "slug": "knee-arthroplasty-rehab",
+        "name": "Knee Arthroplasty Rehabilitation – Early Strength and Mobility Recovery",
+        "body_part": "Lower limb",
+        "goal": "Restore knee joint mobility, improve quadriceps and hip muscle strength, and enhance lower limb function following knee arthroplasty.",
+        "duration_frequency": "4 to 6 weeks, perform exercises 3 to 5 times per week, each session lasting approximately 20–30 minutes.",
+        "general_tips": "Complete exercises in the prescribed order. Maintain controlled, smooth movements and avoid pain during exercises. Rest 30–60 seconds between sets. Use support (chair or wall) as needed for balance during standing exercises.",
+        "key_points": [
+            "Consistency and patience are key to recovery",
+            "Regularly performing exercises helps regain strength and mobility safely"
+        ],
+        "exercises": [
+            {
+                "slug": "seated-knee-extension",
+                "name": "Seated Knee Extension (LAQ)",
+                "video_url": "https://www.youtube.com/watch?v=VuJZ6dqMf8M",
+                "sets": 2,
+                "repetitions": "12 per leg",
+                "description": "Sit on a sturdy chair with your feet flat on the floor. Slowly straighten one knee as much as possible, then lower it back down with control. Repeat on the other leg.",
+                "tips": "Keep your back straight and avoid locking your knee at full extension. Move slowly to maintain control and reduce strain.",
+                "progression": "When comfortable, add ankle weights or increase repetitions by 2 every week to build strength."
+            },
+            {
+                "slug": "ankle-pumps",
+                "name": "Ankle Pumps",
+                "video_url": "https://youtu.be/KxfFzSOAT7g?si=eoS1rRBooLznwPQ_",
+                "sets": 2,
+                "repetitions": "20 per leg",
+                "description": "While sitting or lying down, gently point your toes away from you, then pull them back toward your shin. Perform this movement slowly and smoothly to promote circulation and reduce swelling.",
+                "tips": "Keep your leg relaxed and move only your ankle joint. Breathe normally throughout the exercise.",
+                "progression": "Increase repetitions by 5 per leg as comfort and mobility improve."
+            },
+            {
+                "slug": "glute-bridge",
+                "name": "Glute Bridge",
+                "video_url": "https://youtu.be/WtilA9IJX1c?si=QqQ5sQMvo4iNfpoj",
+                "sets": 2,
+                "repetitions": 10,
+                "duration": "Hold 3 seconds at the top",
+                "rest": "10–20 seconds between sets",
+                "description": "Lie on your back with knees bent and feet flat on the floor, hip-width apart. Lift your hips by squeezing your glutes until your body forms a straight line from shoulders to knees, hold for 3 seconds, then slowly lower down.",
+                "tips": "Keep your core engaged and avoid arching your lower back. Press evenly through your heels to activate your glutes effectively.",
+                "progression": "When comfortable, increase hold time by 2 seconds or add a light resistance band around your thighs for added challenge."
+            },
+            {
+                "slug": "heel-slides",
+                "name": "Heel Slides",
+                "video_url": "https://youtu.be/Bz0wSFRjH2c?si=PEaIYCKzR0_EMVFc",
+                "sets": 2,
+                "repetitions": "12 per leg",
+                "description": "Lie on your back with your legs straight. Slowly slide one heel toward your buttocks by bending your knee, then slide it back to the starting position. Repeat with the other leg.",
+                "tips": "Move slowly and smoothly to avoid any pain. Keep your hips flat on the surface throughout the movement.",
+                "progression": "When comfortable, increase repetitions by 2 per leg or perform the exercise more slowly to improve control."
+            },
+            {
+                "slug": "standing-hip-abduction",
+                "name": "Standing Hip Abduction with Resistive Band",
+                "video_url": "https://www.youtube.com/watch?v=lX2D8tkOYcs",
+                "sets": 2,
+                "repetitions": "10 per leg",
+                "equipment": "Resistance band",
+                "description": "Place a resistance band around your ankles and stand tall holding onto a stable surface for balance. Slowly lift one leg out to the side, keeping your knee straight and your body upright. Lower the leg back down with control and repeat on the other side.",
+                "tips": "Keep your core engaged and avoid leaning your torso to the side. Move slowly to maintain control and maximize muscle activation.",
+                "progression": "When this becomes easier, increase the resistance of the band or add an additional set."
+            },
+            {
+                "slug": "mini-squats-chair-support",
+                "name": "Mini Squats with Chair Support",
+                "video_url": "https://www.youtube.com/watch?v=jaPzvgZFQBI",
+                "sets": 2,
+                "repetitions": 8,
+                "description": "Stand facing a sturdy chair and hold onto its back for support. Slowly bend your knees to lower your body a few inches, keeping your back straight and knees aligned over your toes. Then, gently straighten your legs to return to standing.",
+                "tips": "Keep your weight evenly distributed on both feet and avoid letting your knees go past your toes. Move slowly and control the movement to protect your knee.",
+                "progression": "When comfortable, increase to 3 sets or add a slight pause at the bottom of the squat for 2 seconds."
+            },
+            {
+                "slug": "seated-hamstring-stretch",
+                "name": "Seated Hamstring Stretch",
+                "video_url": "https://www.youtube.com/watch?v=u55F2jOzBVI",
+                "sets": 2,
+                "duration": "Hold each stretch for 20 seconds per leg",
+                "rest": "10–20 seconds between legs",
+                "description": "Sit on the edge of a chair with one leg extended straight in front of you, heel on the floor. Keep your back straight and gently lean forward from your hips until you feel a stretch at the back of your thigh. Hold the position without bouncing.",
+                "tips": "Keep your toes pointed up and avoid rounding your lower back. Stretch both legs evenly to maintain balance.",
+                "progression": "As flexibility improves, increase the hold time by 5 seconds or perform a gentle additional lean forward without pain."
+            },
+            {
+                "slug": "standing-calf-raises",
+                "name": "Standing Calf Raises",
+                "video_url": "https://www.youtube.com/watch?v=k8ipHzKeAkQ",
+                "sets": 2,
+                "repetitions": 12,
+                "description": "Stand with your feet hip-width apart near a wall or chair for balance. Slowly raise your heels off the ground as high as possible, then lower them back down with control.",
+                "tips": "Keep your knees straight but not locked, and avoid leaning forward. Focus on smooth, controlled movements to strengthen your calf muscles safely.",
+                "progression": "When comfortable, increase to 3 sets or add a pause of 2 seconds at the top of the raise."
+            },
+            {
+                "slug": "quad-sets",
+                "name": "Quad Sets",
+                "video_url": "https://www.youtube.com/watch?v=5TUK4uT2nnw",
+                "sets": 2,
+                "repetitions": "10 per leg",
+                "duration": "Hold each contraction for 5 seconds",
+                "rest": "10–20 seconds between sets",
+                "description": "Sit or lie down with your leg straight. Tighten the muscles on the top of your thigh by pressing the back of your knee down toward the floor or bed, and hold the contraction for 5 seconds before relaxing.",
+                "tips": "Keep your leg fully extended and avoid lifting your heel off the surface. Focus on squeezing the thigh muscle firmly to activate it properly.",
+                "progression": "When this exercise feels easy, increase the hold time to 10 seconds or add a light ankle weight for more resistance."
+            }
+        ]
+    }
+]
