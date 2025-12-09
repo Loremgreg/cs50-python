@@ -110,9 +110,6 @@ def get_pathology_by_body_part():
 # def normalize_name():
 # insensible aux majuscules/minuscules, espaces   
 
-# def search_pathologies_by_body_part():
-# 4. filtrer selon MS, MI, Dos, Traumatologie (fracture, elongation): search_pathologies_by_body_part: 
-
 # def exercices():
 #fonction qui genere des exercices en selectionnant des exos random dans une liste 
 
